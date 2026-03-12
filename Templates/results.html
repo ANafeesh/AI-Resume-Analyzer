@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Candidate Ranking</title>
+  <style>
+    /* Reset and base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      word-wrap: break-word;
+    }
+
+    thead {
+      background-color: #0066ff;
+      color: #fff;
+    }
+
+    thead th {
+      padding: 12px 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: left;
+      border-bottom: 3px solid #004bbd;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9fafc;
+    }
+
+    tbody td {
+      padding: 12px 15px;
+      vertical-align: top;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    /* Skills and missing skills as tag lists */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      background-color: #e0e7ff;
+      color: #1e40af;
+      padding: 4px 10px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    /* Score styling */
+    .score {
+      font-weight: 700;
+      color: #007acc;
+    }
+
+    /* Feedback styling */
+    .feedback {
+      font-style: italic;
+      color: #444;
+      max-width: 250px;
+    }
+
+    /* Links */
+    .nav-links {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .nav-links a {
+      color: #0066ff;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #004bbd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Candidate Ranking</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Skills</th>
+          <th>Score</th>
+          <th>Missing Skills</th>
+          <th>AI Feedback</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td>{{ r.name }}</td>
+          <td>
+            <div class="tags">
+              {% for skill in r.skills %}
+                <span class="tag">{{ skill }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td class="score">{{ "%.2f"|format(r.score) }}%</td>
+          <td>
+            <div class="tags">
+              {% for skill in r.missing %}
+                <span class="tag">{{ skill }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td class="feedback">{{ r.feedback }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="nav-links">
+      <a href="{{ url_for('upload') }}">Upload More Resumes</a> |
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+  </div>
+</body>
+</html>

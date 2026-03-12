@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Resumes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Upload Resumes</h2>
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <label>Job Description</label>
+        <textarea name="jobdesc" rows="6" required></textarea>
+        <label>Upload Resumes</label>
+        <input type="file" name="resumes" multiple required>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+</body>
+</html>
