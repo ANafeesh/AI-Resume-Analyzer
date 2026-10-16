@@ -1,0 +1,26 @@
+Position: Senior Full-Stack Cloud Engineer
+Company: CloudScale Innovations
+Location: San Francisco, CA / Remote
+
+About the Role:
+We are looking for an experienced Senior Full-Stack Cloud Engineer to join our core platform engineering team. You will lead the design, development, and operation of high-scale cloud services, containerized applications, and responsive web interfaces.
+
+Key Responsibilities:
+- Design, build, and maintain scalable cloud microservices using Python and FastAPI.
+- Develop responsive, robust front-end interfaces using React and TypeScript.
+- Architect cloud infrastructure on AWS utilizing Docker and Kubernetes (k8s).
+- Implement robust CI/CD automation pipelines and infrastructure as code using Terraform.
+- Optimize database performance across PostgreSQL and Redis.
+- Collaborate closely with product managers and engineers in an Agile / Scrum framework.
+
+Required Qualifications:
+- Bachelor's degree in Computer Science, Software Engineering, or related technical field.
+- 4+ years of professional software engineering experience.
+- Strong proficiency in Python, JavaScript, and TypeScript.
+- Proven hands-on experience with React, Docker, and AWS.
+- Strong database skills with SQL, PostgreSQL, and Redis caching.
+- Excellent communication, problem solving, and cross-functional collaboration skills.
+
+Nice-to-Have Skills:
+- Experience with Terraform, GraphQL, and Kafka.
+- Familiarity with Kubernetes orchestration and monitoring tools.

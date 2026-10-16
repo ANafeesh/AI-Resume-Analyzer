@@ -1,0 +1,31 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Uploads & temporary artifacts
+uploads/
+tmp/
+temp/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Streamlit runtime cache
+.streamlit/

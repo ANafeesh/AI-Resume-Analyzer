@@ -1,0 +1,33 @@
+Jane Doe
+Software Engineer
+jane.doe@example.com | (555) 123-4567 | San Francisco, CA
+https://linkedin.com/in/janedoe | https://github.com/janedoe
+
+Professional Summary
+Results-driven Full Stack Engineer with 4 years of experience designing and scaling web applications, microservices, and cloud infrastructure. Passionate about developer productivity and distributed systems.
+
+Technical Skills
+Programming Languages: Python, JavaScript, TypeScript, SQL, HTML, CSS
+Frameworks & Libraries: React, Node.js, Express, FastAPI, Django
+Databases: PostgreSQL, Redis, MongoDB
+Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD, Linux, Git
+Tools: Jira, Postman, VS Code, GitHub Actions
+
+Work Experience
+Senior Software Engineer | Acme Cloud Solutions
+Jan 2022 - Present
+- Architected and deployed microservices backend using Python, FastAPI, and PostgreSQL, increasing system throughput by 45%.
+- Automated CI/CD deployment pipelines using GitHub Actions and Docker, reducing release cycle time from 3 hours to 15 minutes.
+- Spearheaded database migration to PostgreSQL and Redis cache, optimizing query latency by 60% across 2M daily requests.
+- Mentored 4 junior engineers on distributed systems best practices and code reviews.
+
+Software Developer | NextGen Tech Labs
+Jun 2020 - Dec 2021
+- Developed interactive user dashboards using React, TypeScript, and Redux, improving user engagement by 28%.
+- Built RESTful APIs in Node.js and Express, supporting 50,000+ daily active users.
+- Collaborated in an Agile/Scrum team of 8 engineers delivering bi-weekly production releases.
+
+Education
+Bachelor of Science in Computer Science
+University of California, Berkeley
+2016 - 2020
